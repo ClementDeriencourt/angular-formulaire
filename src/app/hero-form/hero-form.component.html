@@ -37,6 +37,20 @@
       <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>
       <button class="btn btn-primary" (click)="submitted=false">Retour</button>
 
+      <section>
+
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+                <mat-icon [disabled]="!heroForm.form.valid">home</mat-icon>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </form>
   </div>
 
